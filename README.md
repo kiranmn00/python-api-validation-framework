@@ -1,4 +1,3 @@
-# python-api-validation-framework
 # Python API Validation Framework
 
 ## Overview
