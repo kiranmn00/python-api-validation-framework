@@ -2,8 +2,15 @@ import requests
 
 def get_device_data():
 
-    response = requests.get(
-        "https://jsonplaceholder.typicode.com/users/1"
-    )
+```
+url = "https://jsonplaceholder.typicode.com/users/1"
 
-    return response.json()
+response = requests.get(
+    url,
+    timeout=10
+)
+
+response.raise_for_status()
+
+return response.json()
+```
